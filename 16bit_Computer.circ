@@ -80,30 +80,48 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="2.0"/>
-    <comp lib="0" loc="(1010,340)" name="Tunnel">
+    <comp lib="0" loc="(1000,690)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="IO_1"/>
+      <a name="labelfont" val="SansSerif bold 5"/>
+    </comp>
+    <comp lib="0" loc="(1010,660)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="CLK"/>
       <a name="labelfont" val="SansSerif bold 5"/>
     </comp>
-    <comp lib="0" loc="(1010,450)" name="Tunnel">
+    <comp lib="0" loc="(1020,680)" name="Pull Resistor">
       <a name="facing" val="north"/>
-      <a name="label" val="IO_2"/>
-      <a name="labelfont" val="SansSerif bold 5"/>
     </comp>
-    <comp lib="0" loc="(1030,370)" name="Tunnel">
+    <comp lib="0" loc="(1040,690)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="Reset"/>
       <a name="labelfont" val="SansSerif bold 5"/>
     </comp>
-    <comp lib="0" loc="(1130,370)" name="Tunnel">
+    <comp lib="0" loc="(1190,750)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLK"/>
+      <a name="labelfont" val="SansSerif bold 5"/>
+    </comp>
+    <comp lib="0" loc="(1190,860)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="IO_2"/>
+      <a name="labelfont" val="SansSerif bold 5"/>
+    </comp>
+    <comp lib="0" loc="(1210,780)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Reset"/>
+      <a name="labelfont" val="SansSerif bold 5"/>
+    </comp>
+    <comp lib="0" loc="(1310,780)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="IRQ_1"/>
       <a name="labelfont" val="SansSerif bold 5"/>
     </comp>
-    <comp lib="0" loc="(1150,410)" name="Pull Resistor">
+    <comp lib="0" loc="(1330,820)" name="Pull Resistor">
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="0" loc="(1150,410)" name="Splitter">
+    <comp lib="0" loc="(1330,820)" name="Splitter">
       <a name="appear" val="center"/>
       <a name="bit1" val="0"/>
       <a name="bit10" val="none"/>
@@ -124,7 +142,7 @@
       <a name="fanout" val="1"/>
       <a name="incoming" val="16"/>
     </comp>
-    <comp lib="0" loc="(1150,450)" name="Tunnel">
+    <comp lib="0" loc="(1330,860)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="Data"/>
       <a name="labelfont" val="SansSerif bold 5"/>
@@ -340,13 +358,13 @@
     <comp lib="0" loc="(840,520)" name="Clock">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="0" loc="(920,220)" name="Tunnel">
+    <comp lib="0" loc="(980,650)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="Data"/>
       <a name="labelfont" val="SansSerif bold 5"/>
       <a name="width" val="16"/>
     </comp>
-    <comp lib="0" loc="(930,220)" name="Splitter">
+    <comp lib="0" loc="(990,650)" name="Splitter">
       <a name="appear" val="center"/>
       <a name="bit1" val="0"/>
       <a name="bit10" val="none"/>
@@ -366,30 +384,13 @@
       <a name="fanout" val="1"/>
       <a name="incoming" val="16"/>
     </comp>
-    <comp lib="0" loc="(930,250)" name="Tunnel">
+    <comp lib="0" loc="(990,680)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="RAMCONT"/>
       <a name="labelfont" val="SansSerif bold 5"/>
     </comp>
-    <comp lib="0" loc="(940,260)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="IO_1"/>
-      <a name="labelfont" val="SansSerif bold 5"/>
-    </comp>
-    <comp lib="0" loc="(950,230)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="CLK"/>
-      <a name="labelfont" val="SansSerif bold 5"/>
-    </comp>
-    <comp lib="0" loc="(960,250)" name="Pull Resistor">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="0" loc="(980,260)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="Reset"/>
-      <a name="labelfont" val="SansSerif bold 5"/>
-    </comp>
-    <comp lib="1" loc="(1150,450)" name="Controlled Buffer">
+    <comp lib="1" loc="(1010,680)" name="Controlled Buffer"/>
+    <comp lib="1" loc="(1330,860)" name="Controlled Buffer">
       <a name="facing" val="south"/>
       <a name="width" val="16"/>
     </comp>
@@ -403,16 +404,17 @@
       <a name="negate1" val="true"/>
       <a name="size" val="30"/>
     </comp>
-    <comp lib="1" loc="(950,250)" name="Controlled Buffer"/>
-    <comp lib="5" loc="(1010,340)" name="Keyboard">
-      <a name="trigger" val="falling"/>
-    </comp>
-    <comp lib="5" loc="(1170,250)" name="Button">
-      <a name="facing" val="west"/>
-    </comp>
-    <comp lib="5" loc="(960,230)" name="TTY">
+    <comp lib="5" loc="(1020,660)" name="TTY">
       <a name="bg" val="#000000"/>
       <a name="color" val="#ffbb00"/>
+      <a name="cols" val="64"/>
+      <a name="rows" val="32"/>
+    </comp>
+    <comp lib="5" loc="(1190,750)" name="Keyboard">
+      <a name="trigger" val="falling"/>
+    </comp>
+    <comp lib="5" loc="(1460,680)" name="Button">
+      <a name="facing" val="west"/>
     </comp>
     <comp loc="(380,240)" name="RAM_2k">
       <a name="facing" val="north"/>
@@ -428,16 +430,24 @@
     <comp loc="(730,270)" name="IO_interface"/>
     <comp loc="(770,480)" name="CPUz16"/>
     <comp loc="(810,620)" name="ROM_4k"/>
-    <wire from="(1010,360)" to="(1010,440)"/>
-    <wire from="(1010,360)" to="(1020,360)"/>
-    <wire from="(1010,440)" to="(1010,450)"/>
-    <wire from="(1010,440)" to="(1140,440)"/>
-    <wire from="(1020,350)" to="(1020,360)"/>
-    <wire from="(1030,350)" to="(1030,370)"/>
-    <wire from="(1130,370)" to="(1140,370)"/>
-    <wire from="(1140,350)" to="(1140,370)"/>
-    <wire from="(1150,350)" to="(1150,390)"/>
-    <wire from="(1150,410)" to="(1150,430)"/>
+    <wire from="(1010,650)" to="(1020,650)"/>
+    <wire from="(1010,660)" to="(1020,660)"/>
+    <wire from="(1010,680)" to="(1020,680)"/>
+    <wire from="(1020,680)" to="(1030,680)"/>
+    <wire from="(1030,670)" to="(1030,680)"/>
+    <wire from="(1040,670)" to="(1040,680)"/>
+    <wire from="(1040,680)" to="(1040,690)"/>
+    <wire from="(1040,680)" to="(1460,680)"/>
+    <wire from="(1190,770)" to="(1190,850)"/>
+    <wire from="(1190,770)" to="(1200,770)"/>
+    <wire from="(1190,850)" to="(1190,860)"/>
+    <wire from="(1190,850)" to="(1320,850)"/>
+    <wire from="(1200,760)" to="(1200,770)"/>
+    <wire from="(1210,760)" to="(1210,780)"/>
+    <wire from="(1310,780)" to="(1320,780)"/>
+    <wire from="(1320,760)" to="(1320,780)"/>
+    <wire from="(1330,760)" to="(1330,800)"/>
+    <wire from="(1330,820)" to="(1330,840)"/>
     <wire from="(400,270)" to="(400,280)"/>
     <wire from="(400,280)" to="(400,290)"/>
     <wire from="(500,670)" to="(500,680)"/>
@@ -463,15 +473,7 @@
     <wire from="(760,470)" to="(770,470)"/>
     <wire from="(770,450)" to="(770,470)"/>
     <wire from="(840,510)" to="(840,520)"/>
-    <wire from="(920,220)" to="(930,220)"/>
-    <wire from="(950,220)" to="(960,220)"/>
-    <wire from="(950,230)" to="(960,230)"/>
-    <wire from="(950,250)" to="(960,250)"/>
-    <wire from="(960,250)" to="(970,250)"/>
-    <wire from="(970,240)" to="(970,250)"/>
-    <wire from="(980,240)" to="(980,250)"/>
-    <wire from="(980,250)" to="(1170,250)"/>
-    <wire from="(980,250)" to="(980,260)"/>
+    <wire from="(980,650)" to="(990,650)"/>
   </circuit>
   <circuit name="CPUz16">
     <a name="appearance" val="custom"/>
