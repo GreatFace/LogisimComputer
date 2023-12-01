@@ -7,7 +7,7 @@ Finally, the last two bytes are a word pointed to an address if the command is a
 |0010 0101|0011 0000|0000 1000 1010 0110| 0x08a6 addr points to -> address in memory |0000 0000 0000 0110| 0x6
 
 Hex code of the instruction:
-25 03 08 a6 -> 00 06
+25 30 08 a6 -> 00 06
 
 What it's saying in plain English:
 Read from address 08a6 and write the variable to register D.
